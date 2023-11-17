@@ -1,4 +1,6 @@
-package com.mapper.mapperpractice;
+package com.mapper.mapperpractice.controller;
+
+import com.mapper.mapperpractice.entity.Name;
 
 public class NameResponse {
     private int id;

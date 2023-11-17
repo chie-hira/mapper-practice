@@ -1,5 +1,6 @@
-package com.mapper.mapperpractice;
+package com.mapper.mapperpractice.mapper;
 
+import com.mapper.mapperpractice.entity.Name;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

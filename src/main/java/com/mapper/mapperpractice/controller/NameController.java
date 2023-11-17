@@ -1,7 +1,7 @@
 package com.mapper.mapperpractice.controller;
 
-import com.mapper.mapperpractice.Name;
-import com.mapper.mapperpractice.NameService;
+import com.mapper.mapperpractice.entity.Name;
+import com.mapper.mapperpractice.service.NameService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
