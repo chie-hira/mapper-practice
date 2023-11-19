@@ -10,14 +10,20 @@ import java.util.List;
 
 @Service
 public class NameService {
-    private  final NameMapper nameMapper;
+    private final NameMapper nameMapper;
 
-    public NameService(NameMapper nameMapper){
+    public NameService(NameMapper nameMapper) {
         this.nameMapper = nameMapper;
     }
-    public List<Name> getName(){
-          List<Name> names = nameMapper.findAll();
-          return names;
+
+    public List<Name> getNames() {
+        List<Name> names = nameMapper.findAll();
+        return names;
+    }
+
+    public String getName(int id) {
+        String name = nameMapper.findName(id);
+        return name;
     }
 
     @SpringBootApplication

@@ -10,4 +10,7 @@ import java.util.List;
 public interface NameMapper {
     @Select("SELECT * FROM names")
     List<Name> findAll();
+
+    @Select("SELECT name FROM names WHERE id = #{id}")
+    String findName(int id);
 }
