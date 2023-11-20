@@ -20,4 +20,8 @@ public class PostService {
         List<Post> posts = postMapper.findAll();
         return posts;
     }
+
+    public List<Post> searchPostsByTitle(String title) {
+        return postMapper.searchPostsByTitle(title);
+    }
 }

@@ -1,5 +1,6 @@
 package com.mapper.mapperpractice.service;
 
+import com.mapper.mapperpractice.controller.NameShowResponse;
 import com.mapper.mapperpractice.entity.Name;
 import com.mapper.mapperpractice.mapper.NameMapper;
 import org.springframework.boot.SpringApplication;
@@ -21,17 +22,8 @@ public class NameService {
         return names;
     }
 
-    public String getName(int id) {
+    public NameShowResponse getName(int id) {
         String name = nameMapper.findName(id);
-        return name;
-    }
-
-    @SpringBootApplication
-    public static class MapperPracticeApplication {
-
-        public static void main(String[] args) {
-            SpringApplication.run(MapperPracticeApplication.class, args);
-        }
-
+        return new NameShowResponse(name);
     }
 }

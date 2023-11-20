@@ -23,8 +23,7 @@ public class NameController {
     }
 
     @GetMapping("/names/{id}")
-    public String getName(@PathVariable Integer id) {
-        String name = nameService.getName(id);
-        return name;
+    public NameShowResponse getName(@PathVariable Integer id) {
+        return nameService.getName(id);
     }
 }

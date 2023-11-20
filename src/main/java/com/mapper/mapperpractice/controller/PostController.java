@@ -3,6 +3,7 @@ package com.mapper.mapperpractice.controller;
 import com.mapper.mapperpractice.entity.Post;
 import com.mapper.mapperpractice.service.PostService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -20,6 +21,11 @@ public class PostController {
     public List<Post> getPost() {
         List<Post> posts = postService.getPosts();
         return posts;
+    }
+
+    @GetMapping("/search")
+    public List<Post> searchPosts(@RequestParam String title) {
+        return postService.searchPostsByTitle(title);
     }
 
 }
