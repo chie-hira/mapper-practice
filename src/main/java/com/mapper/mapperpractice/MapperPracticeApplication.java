@@ -5,9 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MapperPracticeApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MapperPracticeApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MapperPracticeApplication.class, args);
+    }
 
 }

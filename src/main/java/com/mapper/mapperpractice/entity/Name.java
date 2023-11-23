@@ -1,4 +1,4 @@
-package com.mapper.mapperpractice;
+package com.mapper.mapperpractice.entity;
 
 public class Name {
     private  int id;
