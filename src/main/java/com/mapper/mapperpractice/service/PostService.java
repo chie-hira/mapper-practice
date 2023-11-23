@@ -17,8 +17,7 @@ public class PostService {
     }
 
     public List<Post> getPosts() {
-        List<Post> posts = postMapper.findAll();
-        return posts;
+        return postMapper.findAll();
     }
 
     public List<Post> searchPostsByTitle(String title) {

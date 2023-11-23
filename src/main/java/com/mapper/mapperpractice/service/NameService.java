@@ -18,8 +18,7 @@ public class NameService {
     }
 
     public List<Name> getNames() {
-        List<Name> names = nameMapper.findAll();
-        return names;
+        return nameMapper.findAll();
     }
 
     public NameShowResponse getName(int id) {
